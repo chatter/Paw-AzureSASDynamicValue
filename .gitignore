@@ -1,0 +1,23 @@
+# Logs
+logs
+*.log
+yarn-debug.log*
+yarn-error.log*
+
+# Diagnostic reports (https://nodejs.org/api/report.html)
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Build directory
+build/
+
+# Dependency directories
+node_modules/
+
+# Optional REPL history
+.node_repl_history
+
+# Yarn Integrity file
+.yarn-integrity
+
+# Editor Specific files
+*.swp

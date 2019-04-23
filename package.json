@@ -1,0 +1,42 @@
+{
+  "name": "Paw-AzureSASTokenDynamicValue",
+  "version": "1.0.0",
+  "description": "Dynamic Value Paw extension to generate an Azure Shared Access Signature",
+  "main": "src/AzureSASDynamicValue.js",
+  "repository": "git@github.com:chatter/Paw-AzureSASDynamicValue.git",
+  "author": "Curtis Hatter <mitchell.hatter@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-typescript": "^7.3.3",
+    "@types/crypto-js": "^3.1.43",
+    "@types/jest": "^24.0.11",
+    "babel-jest": "^24.7.1",
+    "jest": "^24.1.0",
+    "prettier": "^1.16.4",
+    "ts-loader": "^5.3.3",
+    "tslint": "^5.12.1",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.3.3",
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3"
+  },
+  "dependencies": {
+    "crypto-js": "^3.1.9-1"
+  },
+  "babel": {
+    "presets": ["@babel/preset-env", "@babel/typescript"],
+    "plugins": ["@babel/plugin-proposal-class-properties"]
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
+  "scripts": {
+    "build": "rm -rf build/ && yarn webpack --bail --display-error-details",
+    "test": "jest"
+  }
+}
