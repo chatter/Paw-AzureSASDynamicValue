@@ -21,14 +21,14 @@ export const AzureSASDynamicValue: DynamicValue = class
    *
    * TODO: type context
    */
-  public title = (context: any): string => 'ABC'
+  public title = (context: any): string => AzureSASDynamicValue.title
 
   /**
    * The text to show in the Dynamic Value Tokens
    *
    * TODO: type context
    */
-  public text = (context: any): string => 'DEF'
+  public text = (context: any): string => AzureSASDynamicValue.title
 
   /**
    * Evaluates the result of the Dynamic Value evaluation.

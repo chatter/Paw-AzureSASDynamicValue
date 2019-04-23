@@ -2,7 +2,7 @@ identifier=com.chatter.PawExtensions.AzureSASDynamicValue
 extensions_dir=$(HOME)/Library/Containers/com.luckymarmot.Paw/Data/Library/Application Support/com.luckymarmot.Paw/Extensions/
 
 build:
-	yarn install && yarn run build
+	yarn && yarn run build
 	cp README.md LICENSE ./build/$(identifier)/
 
 clean:
@@ -11,6 +11,9 @@ clean:
 install: clean build
 	mkdir -p "$(extensions_dir)$(identifier)/"
 	cp -r ./build/$(identifier)/* "$(extensions_dir)$(identifier)/"
+
+lint:
+	yarn lint
 
 test:
 	yarn test

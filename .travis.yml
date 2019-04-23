@@ -1,0 +1,34 @@
+sudo: false
+
+language: node_js
+
+node_js:
+  - 6.17.1
+  - 8.16.0
+  - 10.15.3
+
+cache:
+  yarn: true
+  directories:
+    - node_modules
+
+before_install:
+  - yarn global add codecov
+
+script:
+  - make build
+  - make lint
+  - make test
+
+after_success:
+  - codecov
+
+deploy:
+  provider: releases
+  api_key:
+    secure: R3xTpPkfLkADVedjjaBng9HCr61DVthXeAmI73TBon1orKhFYKdnmucrAbI2NJvdk3yohC8fu7diHrt2qk3KD0UfkPoFwdWFauPfPcv0+TDHY2jr80F3NdjIqz9ENwJcvawD8wX5+G5FMTfcAnGDTZY/x2vkthAXm8K98LrEa9t9F+5psHx+IlJ0Nbc5FdW20lzWm/Bzh8EXh1/mTXAtwW0HyKy7zKn3vdMsd/mXDldKNsrhJRFRhgzWRlONXXdKJGk4V0aFAl+K4iNFPMAI39e7Pd165TN60BKh+CvhQSFX/X2dDg0cRJfgyJ/Tp6DH88iR9G/N31VNwKLdlYRlSQRDxMStf/kaKGRtZb+9OQA7+p4+l3QkdZjE+pTB1+4gcYuxnNt02miXZlb+iY4GFCVBNlRAp3eT6l56vD69fa2URHnvduscFzHV8ngVNbXY24vc8z7QQjJlfeHgZ04OlMoZyfO8M5/N4ONAHxMRebK79q+ZWOE8GW7Dui1yDUdrEJVEJpgxVIX2XkCoImq1yTatyBYMg2y9dQFXbak96Y0Gh4RPkIlDBVn4DBt04DOs7SXRab/nT5YYsCsn3eSRF+vJF3HDo9+DIo3JjVjRuSzUJKgcIgfxqGY6AaUDBl6VLy78o7Yjz5DsoUlLp6Nsri/NSyltuXHaTBmkpIPP0pY=
+  file: build/AzureSASDynamicValue.zip
+  on:
+    tags: true
+    all_branches: true
+    repo: chatter/Paw-AzureSASDynamicValue
