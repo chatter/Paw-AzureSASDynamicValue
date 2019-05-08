@@ -1,8 +1,7 @@
 [![Build Status](https://travis-ci.org/chatter/Paw-AzureSASDynamicValue.svg?branch=master)](https://travis-ci.org/chatter/Paw-AzureSASDynamicValue)
 [![codecov](https://codecov.io/gh/chatter/Paw-AzureSASDynamicValue/branch/master/graph/badge.svg)](https://codecov.io/gh/chatter/Paw-AzureSASDynamicValue)
-[![Dependency Status](https://david-dm.org/chatter/Paw-AzureSASDynamicValue.svg)](https://david-dm.org/chatter/Paw-AzureSASDynamicValue)
-[![devDependencies Status](https://david-dm.org/chatter/Paw-AzureSASDynamicValue/dev-status.svg)](https://david-dm.org/chatter/Paw-AzureSASDynamicValue?type=dev)
-[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square&label=License)](/LICENSE.md) [![Greenkeeper badge](https://badges.greenkeeper.io/chatter/Paw-AzureSASDynamicValue.svg)](https://greenkeeper.io/)
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square&label=License)](/LICENSE.md)
+[![Greenkeeper badge](https://badges.greenkeeper.io/chatter/Paw-AzureSASDynamicValue.svg)](https://greenkeeper.io/)
 
 # Paw-AzureSASDynamicValue
 
