@@ -3,9 +3,9 @@ sudo: false
 language: node_js
 
 node_js:
-  - 6.17.1
-  - 8.16.0
-  - 10.15.3
+  - 8
+  - 10
+  - 12
 
 cache:
   yarn: true
