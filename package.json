@@ -15,7 +15,7 @@
     "@babel/plugin-proposal-class-properties": "^7.7.0",
     "@babel/preset-env": "^7.7.1",
     "@babel/preset-typescript": "^7.7.2",
-    "@types/crypto-js": "^3.1.43",
+    "@types/crypto-js": "^3.1.47",
     "@types/jest": "^25.1.0",
     "babel-jest": "^24.7.1",
     "jest": "^24.1.0",
